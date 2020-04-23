@@ -9,29 +9,29 @@ Topics:
 
 ## Instructions
 
-- [ ] **Fork** this repository, then clone your fork.
-- [ ] **NOTE** You have 2 servers that you will be running here so read these instructions carefully.
-- [ ] **In the root of this directory**: Run `npm install` to download dependencies.
-- [ ] Run the server using `npm start` or `node server.js`. (Don't worry too much about this process, you'll get used to doing this and it will be explained more in the future).
-- [ ] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
-- [ ] Still inside the `client` folder run `npm start` to run the client application.
+- [k] **Fork** this repository, then clone your fork.
+- [k] **NOTE** You have 2 servers that you will be running here so read these instructions carefully.
+- [k] **In the root of this directory**: Run `npm install` to download dependencies.
+- [k] Run the server using `npm start` or `cdnode server.js`. (Don't worry too much about this process, you'll get used to doing this and it will be explained more in the future).
+- [k] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
+- [k] Still inside the `client` folder run `npm start` to run the client application.
 
-- [ ] Once your application is up and running on the client, you should see a browser window that looks like this at `localhost:3000` (although the port number will be different if 3000 is being used).
+- [k] Once your application is up and running on the client, you should see a browser window that looks like this at `localhost:3000` (although the port number will be different if 3000 is being used).
 
   ![Movies Home](https://ibin.co/3xhmmHVl9BKF.png)
 
 ### Part 1
 
-- [ ] Wrap your app with the router.
-- [ ] Inside your App file add two routes.
-  - [ ] one route for `/` that loads the `MovieList` component. **This component will need the movies injected into it via props**.
-  - [ ] one route that will take an `id` parameter after`/movies/` (ex: `/movies/2`, `/movies/3` where the id is dynamic). This route should load the `Movie` component.
+- [k] Wrap your app with the router.
+- [k] Inside your App file add two routes.
+- [k] one route for `/` that loads the `MovieList` component. **This component will need the movies injected into it via props**.
+  - [k] one route that will take an `id` parameter after`/movies/` (ex: `/movies/2`, `/movies/3` where the id is dynamic). This route should load the `Movie` component.
 
 ### Part 2
 
-- [ ] Make it so that the card in `MovieList` is a link, this should direct the user to the `/movies/{id of movie here}` URL, where `:id` is the id of the individual movie.
+- [k] Make it so that the card in `MovieList` is a link, this should direct the user to the `/movies/{id of movie here}` URL, where `:id` is the id of the individual movie.
 - [ ] When a user clicks on a movie card they should be taken to `/movies/{id of movie here}` to see the details for the selected movie.
-- [ ] You will need to modify line 13 of `Movie.js` in order to accept the correct id for the movie selected.
+- [k] You will need to modify line 13 of `Movie.js` in order to accept the correct id for the movie selected.
 - [ ] Add functionality so the `Home` button on the `SavedList` component navigates back to home.
 - [ ] You should now be able to navigate back and forth between the individual movies and the home screen.
 

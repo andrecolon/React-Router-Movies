@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useRouteMatch, Route, NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import axios from 'axios';
 
@@ -8,7 +8,7 @@ const Movie = (props) => {
   const params = useParams();
   useEffect(() => {
 
-    const id = props.items.find(item => item.id === Number(params.itemID));
+    const id = props.movies.find(item => item.id === Number(params.itemID));
     // change ^^^ that line and grab the id from the URL
     // You will NEED to add a dependency array to this effect hook
 
